@@ -703,17 +703,38 @@ fepipe {
 .poste {
     margin: 5px;
     text-align: left;
-    word-wrap: break-word;
+}
+
+.votos {
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.num {
+    margin: 0px;
+    text-align: center;
+    color: red;
+}
+
+.subnum {
+    margin: 0px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: red;
 }
 
 .data {
     margin-top: 5px;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .dia {
     margin: 0px;
     text-align: center;
+}
+
+.upvote {
+    align-self: center;
 }
 
 .mes {
