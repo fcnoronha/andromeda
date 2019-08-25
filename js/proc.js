@@ -1,16 +1,37 @@
-const n = 3;
-
 function setup() {
-    createCanvas(640, 480);
+  canvasWidth = window.innerWidth;
+  canvasHeight = window.innerHeight;
+  createCanvas(canvasWidth, canvasHeight);
+
+  sun = new Planet(180, 0, 0);
+  sun.planetColor = "#000013";
+
+  biggerPlanet = new Planet(80, 0.3, 700);
+
+
+  planet = new Planet(70, 0.1, 300);
+  planet2 = new Planet(85, 0.2, 300);
+  planet3 = new Planet(70, 0.3, 500);
+  planet4 = new Planet(60, 0.2, 700);
+  
+
+
+  sun.attachPlanet(planet);
+  sun.attachPlanet(planet2);
+  sun.attachPlanet(planet3);
+  sun.attachPlanet(biggerPlanet);
+  sun.attachPlanet(planet4);
 }
 
 function draw() {
-    var l = Math.random()*10 + 60;
-    var h = Math.random()*10 + 60;
-    circle(l, h, 100);
-    fill(0);
-    noStroke();
-    text('IME', l-40, h-40);
-    fill(146, 108, 227);
-    console.log(l);
+  background(sun.backgroundColor);
+
+  center();
+
+  sun.draw();
 }
+
+function center() {
+  translate(width / 2, height / 2);
+}
+
