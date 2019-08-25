@@ -85,6 +85,13 @@ function sortListCat(categoria){
 
 document.querySelector("#procurador").onclick=function(){
     var termo = document.querySelector("#busca").value;
+    termo = termo.toLowerCase();
     console.log(termo);
+    var list = document.getElementById("planos");
+    var els = list.getElementsByTagName("A");
+    for (i = 0; i < els.length; i++)
+        if (els[i].getElementsByTagName("H5")[0].innerHTML.toLowerCase().includes(termo))
+            els[i].style.display = "block";
+        else els[i].style.display = "none";
 
 }
