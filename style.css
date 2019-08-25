@@ -694,10 +694,28 @@ p {
 
 .poste {
     margin: 5px;
+    text-align: left;
+    word-wrap: break-word;
 }
 
-.poste > p {
-    text-align: left;
+.data {
+    margin-top: 5px;
+    padding-left: 25px;
+}
+
+.dia {
+    margin: 0px;
+    text-align: center;
+}
+
+.mes {
+    margin: 0px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.plano {
+    padding-left: 25px;
 }
 /* --------------------------
 :: 6.0 Video Area CSS

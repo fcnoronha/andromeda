@@ -66,10 +66,12 @@ function toggleText(button_id)
 
 function sortListCat(categoria){
     var botao = document.getElementById("categorias");
-    botao.innerHTML = categoria;
+    var nomes = ["Todos", "Infraestrutura", "Zeladoria", "Eventos", "Contratação", "Outros"];
+    var cats = ["todos", "infra", "zelado", "eventos", "contrat", "outros"];
+    botao.innerHTML = nomes[cats.indexOf(categoria)];
     var list = document.getElementById("planos");
     var els = list.getElementsByTagName("A");
-    if (categoria == 'todos')
+    if (categoria == "todos")
         for (i = 0; i < els.length; i++) els[i].style.display = "block";
     else
         for (i = 0; i < els.length; i++)
