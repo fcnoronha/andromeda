@@ -2390,7 +2390,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -2399,9 +2399,9 @@ select.form-control-lg:not([size]):not([multiple]) {
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: .175rem .75rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 0.2;
     border-radius: .25rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }

@@ -360,6 +360,7 @@
 	content: "\e66f";
 }
 .ti-thumb-up:before {
+    font-size: 25px;
 	content: "\e670";
 }
 .ti-thumb-down:before {
