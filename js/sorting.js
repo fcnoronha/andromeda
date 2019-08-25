@@ -95,3 +95,12 @@ document.querySelector("#procurador").onclick=function(){
         else els[i].style.display = "none";
 
 }
+
+function togglePreview(){
+    var x = document.getElementById("preview");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

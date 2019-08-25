@@ -87,17 +87,29 @@
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <div class="form-group">
-                                            <div name="description" class="form-control textao" id="markdown" contenteditable="true">
-                                                ae troxas
+
+                                        <div class="row">
+
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div name="description" class="form-control textao" id="markdown" contenteditable="true">
+                                                        Escreva o corpo do seu projeto aqui.
+                                                    </div>
+                                                    <div class="divao">
+                                                        <button type="button" class="btn btn-primary btn-sm butao" onclick="togglePreview()">preview</button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <small class="togglepreview">preview</small>
+
+                                            <div class="col-6">
+                                                <div id="preview" class="form-group preview">
+                                                    <div id="output-html" class="form-control textao"></div>
+                                                </div>
+                                            </div>
+
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div id="output-html" class="form-control textao"></div>
-                                        </div>
+
+
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
@@ -155,6 +167,8 @@
     <script src="js/active.js"></script>
     <!-- Markdown Parser -->
     <script src="js/parser.js"></script>
+    <!-- Sorting -->
+    <script src="js/sorting.js"></script>
 </body>
 
 </html>

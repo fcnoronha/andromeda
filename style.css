@@ -739,10 +739,27 @@ fepipe {
     padding-left: 50px;
 }
 
+.preview {
+    display: none;
+}
+
+.butao {
+    margin-top: 5px;
+}
+
+.divao {
+    text-align: left;
+
+}
+
 .mes {
     margin: 0px;
     text-align: center;
     font-size: 0.9rem;
+}
+
+.textao {
+    text-align: left;
 }
 
 .plano {
