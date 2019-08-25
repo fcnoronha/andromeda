@@ -687,6 +687,18 @@ p {
     margin-top: 15px;
 }
 
+.filtros {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+}
+
+.poste {
+    margin: 5px;
+}
+
+.poste > p {
+    text-align: left;
+}
 /* --------------------------
 :: 6.0 Video Area CSS
 -------------------------- */

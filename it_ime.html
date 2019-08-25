@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 filtros">
                         <div class="row">
 
                             <!-- menu de opções lateral -->
@@ -86,10 +86,11 @@
                                 </div>
 
                                 <div class="single-feature">
-                                    <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button id="categorias" class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Categorias
                                     </button>
                                     <div class="dropdown-menu">
+                                        <a id="todos" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Mostrar todos</a>
                                         <a id="infra" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Infraestrutura</a>
                                         <a id="zelado" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Zeladoria</a>
                                         <a id="eventos" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Eventos</a>
@@ -114,38 +115,23 @@
 
                     <div class="col-12 col-lg-8">
 
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <div class="list-group" id="planos">
+                            <a href="pl_elevador.html" id="infra" class="poste list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="poste">Instalação de elevador no bloco A</h5>
+                                    <small>x dias atrás</small>
+                                </div>
+                                <p class="poste">Obra de acessibilidade dentro do Instituto, por normas do município</p>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <a href="#" id="infra" class="poste list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="poste">Reforma do laboratório Rede Linux/IME</h5>
+                                    <small>x dias atrás</small>
+                                </div>
+                            <p class="poste">blabla sla men</p>
                             </a>
                         </div>
 
-                        <div class="row list-group" id="planos">
-                            <a href="pl_elevador.html" id="infra" class="list-group-item list-group-item-action">Elevador</a>
-                            <a href="#" id="infra" class="list-group-item list-group-item-action">Laboratorio</a>
-                            <a href="#" id="contrat" class="list-group-item list-group-item-action">Demitir geral</a>
-                            <a href="#" id="contrat" class="list-group-item list-group-item-action">Matar aposentados</a>
-                            <a href="#" id="eventos" class="list-group-item list-group-item-action">Asasina o Bolnero</a>
-                            <a href="#" id="outros" class="list-group-item list-group-item-action">Fazer contas</a>
-                        </div>
                     </div>
                 </div>
             </div>

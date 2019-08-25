@@ -65,10 +65,14 @@ function toggleText(button_id)
 }
 
 function sortListCat(categoria){
+    var botao = document.getElementById("categorias");
+    botao.innerHTML = categoria;
     var list = document.getElementById("planos");
     var els = list.getElementsByTagName("A");
-    console.log(categoria);
-    for (i = 0; i < (els.length); i++)
-        if (els[i].id == categoria) els[i].style.display = "block";
-        else els[i].style.display = "none";
+    if (categoria == 'todos')
+        for (i = 0; i < els.length; i++) els[i].style.display = "block";
+    else
+        for (i = 0; i < els.length; i++)
+            if (els[i].id == categoria) els[i].style.display = "block";
+            else els[i].style.display = "none";
 }
