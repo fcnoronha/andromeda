@@ -23,106 +23,106 @@
 </head>
 
 <body>
+
     <!-- Preloader Start -->
     <div id="preloader">
         <div class="colorlib-load"></div>
     </div>
 
-
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <!-- Menu Area Start -->
-                <div class="col-12 col-lg">
-                    <div class="menu_area">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <!-- Logo -->
-                            <a class="navbar-brand" href="index.html">Ca.</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                            <!-- Menu Area -->
-                            <div class="collapse navbar-collapse" id="ca-navbar">
-                                <ul class="navbar-nav ml-auto" id="nav">
-                                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="lista_inst.html">Planejamentos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="sugira.html">Sugira</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="lista_suge.html">Ver sugestões</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="index.html">Ca.</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                                <li class="nav-item"><a class="nav-link" href="lista_inst.html">Planejamentos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="sugira.html">Sugira</a></li>
+                                <li class="nav-item"><a class="nav-link" href="lista_suge.html">Ver sugestões</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- header -->
 
+    <section class="special-area bg-white section_padding_50" id="lista_sugeridos">
 
-    <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text -->
-                    <div class="section-heading text-center">
-                        <h2>IME</h2>
-                        <div class="line-shape"></div>
+            <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Heading Text -->
+                        <div class="section-heading text-center">
+                            <h2>IME</h2>
+                            <div class="line-shape"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="row">
-                        <!-- Single Feature Start -->
-                        <div class="col-12">
-                            <div class="single-feature">
-                                <button type="button" id="alfabeta" class="btn btn-primary btn-lg" onclick="sortListDir(this.id)">Z-A</button>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="row">
+                            <!-- Single Feature Start -->
+                            <div class="col-12">
+                                <div class="single-feature">
+                                    <button type="button" id="alfabeta" class="btn btn-primary btn-lg" onclick="sortListDir(this.id)">Z-A</button>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Single Feature Start -->
-                        <div class="col-12">
-                            <div class="single-feature">
-                                <div class="btn-group">
-                                    <button type ="button" class="btn btn-primary">Categorias</button>
-                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a id="infra" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Infraestrutura</a>
-                                        <a id="zelado" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Zeladoria</a>
-                                        <a id="eventos" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Eventos</a>
-                                        <a id="contrat" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Contratação</a>
-                                        <a id="outros" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Outros</a>
+                            <!-- Single Feature Start -->
+                            <div class="col-12">
+                                <div class="single-feature">
+                                    <div class="btn-group">
+                                        <button type ="button" class="btn btn-primary">Categorias</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a id="infra" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Infraestrutura</a>
+                                            <a id="zelado" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Zeladoria</a>
+                                            <a id="eventos" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Eventos</a>
+                                            <a id="contrat" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Contratação</a>
+                                            <a id="outros" class="dropdown-item" onclick="sortListCat(this.id)" href="#">Outros</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="row list-group" id="planos">
-                        <a href="#" id="infra" class="list-group-item list-group-item-action">Elevador</a>
-                        <a href="#" id="infra" class="list-group-item list-group-item-action">Laboratorio</a>
-                        <a href="#" id="contrat" class="list-group-item list-group-item-action">Demitir geral</a>
-                        <a href="#" id="contrat" class="list-group-item list-group-item-action">Matar aposentados</a>
-                        <a href="#" id="eventos" class="list-group-item list-group-item-action">Asasina o Bolnero</a>
-                        <a href="#" id="outros" class="list-group-item list-group-item-action">Fazer contas</a>
+                    <div class="col-12 col-lg-8">
+                        <div class="row list-group" id="planos">
+                            <a href="#" id="infra" class="list-group-item list-group-item-action">Elevador</a>
+                            <a href="#" id="infra" class="list-group-item list-group-item-action">Laboratorio</a>
+                            <a href="#" id="contrat" class="list-group-item list-group-item-action">Demitir geral</a>
+                            <a href="#" id="contrat" class="list-group-item list-group-item-action">Matar aposentados</a>
+                            <a href="#" id="eventos" class="list-group-item list-group-item-action">Asasina o Bolnero</a>
+                            <a href="#" id="outros" class="list-group-item list-group-item-action">Fazer contas</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <!-- ***** Awesome Features End ***** -->
 
-    <!-- ***** Footer Area Start ***** -->
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
-        
         <!-- Foooter Text-->
         <div class="copyright-text">
             <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
             <p>Copyright ©2017 Ca. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
         </div>
     </footer>
-    <!-- ***** Footer Area Start ***** -->
-
+    
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
