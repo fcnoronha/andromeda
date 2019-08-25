@@ -88,7 +88,15 @@
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="description" class="form-control" id="category" cols="30" rows="4" placeholder="Breve descrição" required></textarea>
+                                            <div name="description" class="form-control textao" id="markdown" contenteditable="true">
+                                                ae troxas
+                                            </div>
+                                            <small class="togglepreview">preview</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div id="output-html" class="form-control textao"></div>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
@@ -145,6 +153,8 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    <!-- Markdown Parser -->
+    <script src="js/parser.js"></script>
 </body>
 
 </html>

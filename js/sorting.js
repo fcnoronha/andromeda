@@ -9,6 +9,7 @@ function sortListDir(button_id) {
         // start by saying: no switching is done:
         switching = false;
         b = list.getElementsByTagName("A");
+        // console.log(b);
         // Loop through all list-items:
         for (i = 0; i < (b.length - 1); i++) {
             //start by saying there should be no switching:
@@ -16,19 +17,22 @@ function sortListDir(button_id) {
             /* check if the next item should switch place with the current item,
             based on the sorting direction (asc or desc): */
             if (dir == "asc") {
-                if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                console.log(b[i].getElementsByTagName("H5")[0]);
+                console.log(b[i + 1].getElementsByTagName("H5")[0]);
+                if (b[i].getElementsByTagName("H5")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("H5")[0].innerHTML.toLowerCase()) {
                     /* if next item is alphabetically lower than current item,
                     mark as a switch and break the loop: */
                     shouldSwitch = true;
                     break;
                 }
             } else if (dir == "desc") {
-                if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+                if (b[i].getElementsByTagName("H5")[0].innerHTML.toLowerCase() < b[i + 1].getElementsByTagName("H5")[0].innerHTML.toLowerCase()) {
                     /* if next item is alphabetically higher than current item,
                     mark as a switch and break the loop: */
                     shouldSwitch= true;
                     break;
                 }
+                console.log(shouldSwitch);
             }
         }
         if (shouldSwitch) {
@@ -77,4 +81,10 @@ function sortListCat(categoria){
         for (i = 0; i < els.length; i++)
             if (els[i].id == categoria) els[i].style.display = "block";
             else els[i].style.display = "none";
+}
+
+document.querySelector("#procurador").onclick=function(){
+    var termo = document.querySelector("#busca").value;
+    console.log(termo);
+
 }
