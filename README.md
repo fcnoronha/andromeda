@@ -1,6 +1,8 @@
 # Andrômeda
 
-Plataforma de auxilio no planejamento da universidade. Definimos o planejanemto como itens a serem cumpridos da agenda universataria (em quesitos orçamentarios, humanos, etc...). Idealmente, os responsaveis pela administração devem alimentar o sistema, que devera ser aberto para todos. Uma das principais features do sistema se da pela possiblidade da população de sugerir edições e ate mesmo topicos no planejamento universitario, atravez de um sistema de votos.
+[![](/img/logo-lg.png)](http://mrfelipenoronha.github.io/andromeda)
+
+Criamos uma plataforma que possibilita que a universidade melhore e mostre a população seu planejamento interno — orçamento, ações, etc. Com um sistema de sugestão coletiva que promove uma melhor tomada de decisão com a ajuda da população, queremos solucionar a dificuldade da reitoria e dos institutos de se planejarem e tomarem decisões acerca do futuro da universidade.
 
 ## Integrantes
 
